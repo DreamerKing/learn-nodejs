@@ -1,0 +1,30 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Learn Nodejs",
+  "main": "app.js",
+  "dependencies": {
+    "babel-core": "^6.21.0",
+    "babel-preset-env": "^1.1.8",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DreamerKing/learn-nodejs.git"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "learn"
+  ],
+  "author": "DreamerKing, Ninja",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DreamerKing/learn-nodejs/issues"
+  },
+  "homepage": "https://github.com/DreamerKing/learn-nodejs#readme"
+}
