@@ -11,9 +11,10 @@ gobal对象在所有模块中都可以访问，它主要包含与模块、定时
 ## 全局对象 
 * Buffer  
 * console
-* process 
+* process   
 
-### 全局方法
+## 全局方法   
+主要是三类定时器的方法 
 1.  * setImmediate(callback [, ...args])  立即调用
     * clearImmediate(immediateObject)
 
