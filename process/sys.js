@@ -1,0 +1,20 @@
+switch (process.arch) {
+    case 'x64':
+        console.log(process.arch);
+       // require('./lib.x64.node');
+        break;
+    case 'ia32':
+        console.log(process.arch);
+       // require('./lib.Win32.node');
+        break;
+    default:
+        throw new Error("Unsuported process.arch:", process.arch);
+        break;
+}
+
+console.log(process.memoryUsage());
+/* 
+  rss 常驻内存大小
+  heapTotal 动态分配的可用内存
+  heapUsed 已使用的堆大小
+ */

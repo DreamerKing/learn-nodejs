@@ -5,13 +5,13 @@ gobal对象在所有模块中都可以访问，它主要包含与模块、定时
 * __dirname  当前目录路径
 * ——filename  当前文件路径
 * exports 导出对象，它是module.expots的一个引用
-* module 当前模块对象
+* `module` 当前模块对象, 仅仅存在当前模块中
 * require(moduleName)  导入模块方法 
 
 ## 全局对象 
-* Buffer  
+* `Buffer`  
 * console
-* process   
+* `process`  
 
 ## 全局方法   
 主要是三类定时器的方法 
@@ -23,3 +23,37 @@ gobal对象在所有模块中都可以访问，它主要包含与模块、定时
 
 1.  * setTimeout(callback, delay[, ...args]) 定时调用
     * clearTimeout(timeoutObject)
+
+## 安装和加载模块
+```bash
+npm search express
+npm search /^express$/  //可以使用`npmsearch`工具代替
+npm install express
+```
+全局模式安装的模块一般放在`/usr/local/lib/node_modules`目录下
+
+```javascript
+const express = require('express);
+```
+
+## console对象
++ console.log()
++ console.info()
++ console.error()
++ console.warn()
++ console.trace() //堆栈日志
++ console.time() / console.timeEnd() //基准测试  模块:benchmark | microtime 
+  
+  消息内容通过`util.inspect`格式化,这些格式化通过`util.format`实现。  
+
+    | 占位符 | 类型 |
+    |:-----:|:----:|
+    | %s | string |
+    | %d | number |
+    | %j | JSON |
+
+    | 流类型 | 句柄 | |
+    |:----:|:---:|:----|
+    |stdin| 0 | |
+    |stdout| 1 | console.log() <br/> console.info()|
+    | stderr | 2 | console.error()<br/> console.warn()|
