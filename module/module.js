@@ -16,3 +16,14 @@ e.d = 10;
 e.f = 12;
 console.log(m.e);
 console.log(e);
+
+console.log(module, "module");
+console.log(exports, "exports");
+console.log(require, "require");
+
+console.log(require.resolve('./module.js'));
+console.log(require.cache, "require.cache");
+delete require.cache[require.resolve("./module.js")];
+console.log(require.cache, "require.cache");
+
+

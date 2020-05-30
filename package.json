@@ -4,11 +4,21 @@
   "description": "Learn Nodejs",
   "main": "app.js",
   "dependencies": {
+    "@hapi/hapi": "^19.1.1",
     "babel-core": "^6.21.0",
     "babel-preset-env": "^1.1.8",
-    "express": "^4.13.4"
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "rabbitmq-nodejs-client": "^0.1.0",
+    "redis": "^2.8.0",
+    "signals": "^1.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0"
+  },
   "scripts": {
     "test": "node test/count-stream-test-2.js"
   },

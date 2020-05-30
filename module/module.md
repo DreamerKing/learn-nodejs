@@ -86,3 +86,7 @@ npm install [-g|--save|--save-dev]  //安装包
 npm update package //更新包
 npm uninstall package //卸载包
 ```
+
+module对象在所有Node应用中都存在，但是每个module对象只存在于它的当前模块中。
+
+require module exports
