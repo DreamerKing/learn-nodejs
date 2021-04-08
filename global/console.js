@@ -1,4 +1,4 @@
-var name = "alex"
+/* var name = "alex"
 var age = 23.6;
 var user = {
     name: "king",
@@ -7,4 +7,6 @@ var user = {
 
 console.log("Hello %s", name)
 console.log("Hello ", name);
-console.log("Hello:", user);
+console.log("Hello:", user); */
+
+console.log(global.global);

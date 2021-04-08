@@ -15,14 +15,18 @@ gobal对象在所有模块中都可以访问，它主要包含与模块、定时
 
 ## 全局方法   
 主要是三类定时器的方法 
-1.  * setImmediate(callback [, ...args])  立即调用
+1.  * setImmediate(callback [, ...args]) 在当前事件轮询结尾，下一次轮询定时器前执行。
     * clearImmediate(immediateObject)
 
-1.  * setInterval(callback, delay[, ...args]) 定时循环调用
+2.  * setInterval(callback, delay[, ...args]) 定时循环调用
     * clearInterval(intervalObject)
 
-1.  * setTimeout(callback, delay[, ...args]) 定时调用
+3.  * setTimeout(callback, delay[, ...args]) 定时调用
     * clearTimeout(timeoutObject)
+
+4. process.nextTick(callback) 在任何设置好的Immediate以及安排好的I/O前执行，并且不可取消。
+
+调用setTimeout和setInterval返回的是Timeout对象，这个对象提供了unref()和ref()这个两个方法。
 
 ## 安装和加载模块
 ```bash
@@ -57,3 +61,6 @@ const express = require('express);
     |stdin| 0 | |
     |stdout| 1 | console.log() <br/> console.info()|
     | stderr | 2 | console.error()<br/> console.warn()|
+
+需要学习点:
+queueMicrotask
