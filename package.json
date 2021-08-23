@@ -5,6 +5,11 @@
   "main": "app.js",
   "dependencies": {
     "@hapi/hapi": "^19.1.1",
+    "@stamp/arg-over-prop": "^1.0.4",
+    "@stamp/compose": "^1.0.2",
+    "@stamp/convert-class": "^1.0.3",
+    "@stamp/eventemittable": "^1.0.2",
+    "@stamp/it": "^1.1.0",
     "babel-core": "^6.21.0",
     "babel-preset-env": "^1.1.8",
     "express": "^4.17.1",
