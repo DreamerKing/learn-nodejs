@@ -17,7 +17,7 @@
     "mime": "^2.5.2",
     "moment": "^2.24.0",
     "rabbitmq-nodejs-client": "^0.1.0",
-    "redis": "^2.8.0",
+    "redis": "^3.1.1",
     "signals": "^1.0.0",
     "uuid": "^8.3.2",
     "yargs": "^17.3.1"
