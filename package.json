@@ -15,7 +15,7 @@
     "babel-preset-env": "^1.1.8",
     "express": "^4.17.1",
     "mime": "^2.5.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "rabbitmq-nodejs-client": "^0.1.0",
     "redis": "^2.8.0",
     "signals": "^1.0.0",
