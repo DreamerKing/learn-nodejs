@@ -13,7 +13,7 @@
     "@stamp/it": "^1.1.0",
     "babel-core": "^6.21.0",
     "babel-preset-env": "^1.1.8",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "mime": "^2.5.2",
     "moment": "^2.24.0",
     "rabbitmq-nodejs-client": "^0.1.0",
