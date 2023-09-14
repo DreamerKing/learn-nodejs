@@ -26,6 +26,11 @@ console.log(buf6); */
 const buf6 = Buffer.from('tést', 'latin1');
 console.log(buf6);
 
+console.log(Buffer.from('fhqwhgads'));
+console.log(Buffer.from('fhqwhgads', 'utf16le'));
+
+const b = Buffer.from('121a2bg123', 'hex');
+console.log(b)
 
 
 

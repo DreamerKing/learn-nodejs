@@ -1,0 +1,16 @@
+TN:
+SF:src/lib/for-test/add.js
+FN:1,add
+FNF:1
+FNH:1
+FNDA:1,add
+DA:1,1
+DA:2,1
+DA:3,1
+LF:3
+LH:3
+BRDA:1,0,0,1
+BRDA:2,1,0,2
+BRF:2
+BRH:2
+end_of_record

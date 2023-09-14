@@ -1,0 +1,61 @@
+# Rules & Behaviors
+# allow-uncaught: false # 允许未捕获异常冒泡
+# async-only: false # 要求所有测试用例返回Promise
+bail: true # 首个测试用例失败 Abert('bail')
+check-leaks: true # 检查全局变量泄漏
+# delay: false # 延迟根测试套件初始化执行
+# exit: false # 测试用例执行完成强制mocha退出
+extension: ['js', 'cjs', 'mjs']
+# fail-zero: true # 如果测试用例不存在则运行失败
+# jobs: 1 # 并发执行任务数
+# parallel: false # 是否并行执行测试用例
+# timeout: 2000 # same as "timeout: '2s'" 超时时间
+# timeout: false # same as "timeout: 0"
+# slow: 75 # 慢测试阈值 默认75ms
+# ui: 'bdd' # 测试模型
+
+# Reporting & Output
+color: true
+# diff: true # 失败时展示diff信息
+full-trace: true # 展示详细栈信息
+inline-diffs: false # 用例运行失败时是否以内联的形式展示实际值和期待值
+# reporter: 'spec' # 指定测试用例规格
+# reporter-option: # array, not object
+  # - 'foo=bar'
+  # - 'baz=quux'
+
+# configuration
+# fgrep and grep are mutually exclusive
+# fgrep: src/lib/mocha/**/*.spec.js
+# file:
+  # - 'src/lib/mocha/add.spec.js'
+# forbid-only: false # 如果遇到排他测试则运行失败
+forbid-pending: false # 如果遇到pending状态的测试用例则运行失败
+# global: # 允许访问的全局变量列表
+  # - 'jQuery'
+  # - '$'
+# fgrep and grep are mutually exclusive
+# grep: /something/i # also 'something'
+# growl: false
+# ignore:
+  # - '/path/to/some/ignored/file'
+# needs to be used with grep or fgrep
+# invert: false
+
+# node-option:
+  # - 'unhandled-rejections=strict' # without leading "--", also V8 flags
+# package: './package.json'
+recursive: true
+
+# require: '@babel/register'
+retries: 1
+# sort: false
+spec:
+  - 'src/lib/mocha/**/*.spec.js' # the positional arguments!
+# trace-warnings: true # node flags ok
+# v8-stack-trace-limit: 100 # V8 flags are prepended with "v8-"
+# watch: false
+watch-files:
+  - 'src/lib/mocha/**/*.js'
+# watch-ignore:
+  # - 'lib/vendor'
